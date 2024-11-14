@@ -10,6 +10,7 @@ import left_arrow from './left-arrow.png'
 import right_arrow from './right-arrow.png'
 import discount_img from './discount-img.webp'
 import close_icon from './close.png'
+import menu_icon from './menu.png'
 import book1 from './book1.webp'
 import book2 from './book2.webp'
 import book3 from './book3.webp'
@@ -25,6 +26,7 @@ import book11 from './book11.webp'
 
 export const assests = {
     discount_img,
+    menu_icon,
     close_icon,
     logo,
     cart_logo,

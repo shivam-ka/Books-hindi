@@ -22,15 +22,15 @@
     transition: 0.3s;
 }
 
-.nav-title .logo:hover{
+.nav-title .logo:hover {
     transform: rotate(0deg);
 }
 
-.nav-title h1{
+.nav-title h1 {
     font-family: "Tiro Devanagari Hindi", serif;
 }
 
-.nav-title p{
+.nav-title p {
     font-family: "Tiro Devanagari Hindi", serif;
 }
 
@@ -85,6 +85,10 @@
     transition: 0.3s;
 }
 
+.menu-close {
+    display: none;
+}
+
 .nav-menu ul li:hover {
     color: #ff4d4d;
 }
@@ -92,6 +96,11 @@
 .nav-cart img {
     width: 40px;
     cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
 }
 
 
@@ -114,15 +123,21 @@
 }
 
 @media screen and (max-width: 580px) {
+
+    .menu-icon {
+        display: block;
+        width: 30px;
+    }
+
     .navbar {
         padding: 10px 20px;
     }
 
-    .nav-title h1{
+    .nav-title h1 {
         font-size: 20px;
     }
-    
-    .nav-title p{
+
+    .nav-title p {
         font-size: 16px;
     }
 
@@ -133,5 +148,33 @@
 
     .nav-search {
         display: none;
+    }
+
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu ul {
+        transition: ease-in-out 0.3s;
+        background: #ededed;
+        position: absolute;
+        right: -280px;
+        padding: 50px 100px 20px 50px;
+        height: 100vh;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-close {
+        width: 25px;
+        z-index: 2;
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
     }
 }

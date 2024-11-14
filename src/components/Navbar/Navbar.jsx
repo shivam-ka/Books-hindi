@@ -4,6 +4,16 @@ import { assests } from '../../assets/assests'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+    const openMenu = (params) => {
+      navMenuList.style.right = "0"
+    }
+    
+
+    const closeMenu = () => {
+        navMenuList.style.right = "-280px"
+    }
+    
     return (
         <div className='navbar'>
             <Link to={'/'}>
@@ -25,18 +35,21 @@ const Navbar = () => {
             </div>
 
             <div className="nav-menu">
-                <ul>
+                
+                <ul id='navMenuList'>
                     <li> <a href="#footer">About us</a> </li>
                     <li> <a href="#foodDisplay">Categories</a> </li>
                     <li> <a href="#footer">Contact us</a> </li>
                     <li>Track Order</li>
                     <hr />
                     <li>Account</li>
+                    <img onClick={()=> closeMenu()} className='menu-close' src={assests.close_icon} alt="" />
                 </ul>
             </div>
             <div className="nav-cart">
-                <img src={assests.cart_logo} alt="" />
+                <img  src={assests.cart_logo} alt="" />
             </div>
+            <img onClick={()=>openMenu()} className='menu-icon' src={assests.menu_icon} alt="" />
         </div>
     )
 }
