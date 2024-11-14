@@ -1,0 +1,62 @@
+.bookitem{
+    min-width: 300px;
+    border: 1px solid #000;
+    border-radius: px;
+    padding: 20px 10px 30px 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px gray;
+}
+
+.bookitem-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.original-price{
+    text-decoration: line-through;
+    color: #6e6e6e;
+}
+
+.add-btn{
+    padding: 5px 40px;
+    font-size: 20px ;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 30px 5px 30px 30px;
+    background: linear-gradient(135deg,#ff4d4d,#ff2929);
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background: linear-gradient(135deg,#f33838,#ed1414);
+}
+
+@media screen and (max-width: 580px) {
+    .bookitem{
+        min-width: 200px;
+        padding:  15px;
+    }
+
+    .bookitem-detail{
+        flex-direction: column;
+        align-items: normal;
+        gap: 10px;
+    }
+
+    .add-btn{
+        font-size: 18px;
+
+        border-radius: 0;
+    }
+}

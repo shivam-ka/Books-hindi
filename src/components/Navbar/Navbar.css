@@ -1,0 +1,137 @@
+.navbar {
+    width: 100vw;
+    padding: 20px 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ff4d4d;
+    justify-content: space-evenly;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.nav-title .logo {
+    width: 50px;
+    height: 50px;
+    transform: rotate(-20deg);
+    transition: 0.3s;
+}
+
+.nav-title .logo:hover{
+    transform: rotate(0deg);
+}
+
+.nav-title h1{
+    font-family: "Tiro Devanagari Hindi", serif;
+}
+
+.nav-title p{
+    font-family: "Tiro Devanagari Hindi", serif;
+}
+
+.nav-title hr {
+    margin: 3px 0;
+    border-color: #ff4d4d;
+}
+
+.nav-title span {
+    color: #ff4d4d;
+}
+
+.nav-title p {
+    color: #141414;
+}
+
+.nav-search {
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    border: 2px solid #222222;
+    border-radius: 30px;
+    padding: 6px 15px;
+    gap: 10px;
+}
+
+.nav-search img {
+    width: 30px;
+}
+
+.nav-search input {
+    border: none;
+    width: 85%;
+    outline: none;
+    font-size: 18px;
+    font-family: "Outfit", serif;
+    background: transparent;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+}
+
+.nav-menu ul li {
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu ul li:hover {
+    color: #ff4d4d;
+}
+
+.nav-cart img {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 20px 20px;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-search {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-title h1{
+        font-size: 20px;
+    }
+    
+    .nav-title p{
+        font-size: 16px;
+    }
+
+    .nav-title .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-search {
+        display: none;
+    }
+}

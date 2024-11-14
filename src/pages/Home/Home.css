@@ -1,0 +1,33 @@
+.discount-popup {
+  display: none;
+}
+
+.discount-popup img {
+  width: 250px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 10px;
+}
+
+.home .close {
+  width: 25px;
+  position: fixed;
+  bottom: 265px;
+  right: 60px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+  .discount-popup img {
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+  }
+
+  .home .close {
+    width: 20px;
+    bottom: 143px;
+    right: 25px;
+  }
+}
