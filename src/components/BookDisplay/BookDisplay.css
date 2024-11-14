@@ -9,6 +9,7 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 30px;
+    
 
 }
 
@@ -28,6 +29,7 @@
     display: flex;
     gap: 30px;
     overflow-x: scroll;
+    padding: 20px ;
 }
 
 .bestSeller .bestSeller-container::-webkit-scrollbar{

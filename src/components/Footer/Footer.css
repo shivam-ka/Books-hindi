@@ -12,13 +12,15 @@
 
 
 
-
-
 .footer-content {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 80px;
+}
+
+.footer-content-left h2 span{
+    color: #ff4d4d;
 }
 
 .footer-content-left div {

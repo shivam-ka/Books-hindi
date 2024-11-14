@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer-content-left">
                     <div>
                         <img src={assests.logo} alt="" />
-                        <h2>बुक्स हिंदी</h2>
+                        <h2>बुक्स <span>हिंदी</span> </h2>
                     </div>
 
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, doloribus? Aut corporis nihil iusto asperiores amet, quasi beatae rerum, maiores culpa minima nulla unde totam facilis consectetur tempore earum natus magnam necessitatibus harum distinctio excepturi.</p>

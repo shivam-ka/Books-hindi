@@ -22,6 +22,7 @@ import book8 from './book8.webp'
 import book9 from './book9.webp'
 import book10 from './book10.webp'
 import book11 from './book11.webp'
+import book12 from './book12.webp'
 
 
 export const assests = {
@@ -49,6 +50,7 @@ export const assests = {
     book9,
     book10,
     book11,
+    book12,
 
 }
 
@@ -123,6 +125,12 @@ export const newRelease = [
         price: 189,
         Discount_Price: 79,
         img: book11,
+    },
+    {
+        id: 12,
+        price: 179,
+        Discount_Price: 189,
+        img: book12,
     },
 
 
